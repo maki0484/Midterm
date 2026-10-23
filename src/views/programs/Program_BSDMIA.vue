@@ -1,17 +1,11 @@
 <script setup>
 import ProgramDetail from './ProgramDetail.vue'
-import coordinatorPhoto from '../../assets/faculty/head_dmia.jpg'
-
-const faculty = [
-  { name: 'Marjee Rose B. Parreño', title: 'Program coordinator (BSCS, BSDMIA, and MSCS)', image: coordinatorPhoto },
-]
 
 const program = {
   code: 'BSDMIA',
   name: 'Digital Media and Interactive Arts',
   accentColor: '#e4b746',
   overview: 'Bring visual storytelling, design, and technology together to create digital and interactive experiences.',
-  faculty,
   objectives: [
     'Develop concepts into engaging digital media and interactive experiences.',
     'Use design and production tools to communicate ideas for different audiences.',

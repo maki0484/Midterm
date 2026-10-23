@@ -18,7 +18,6 @@ defineProps({
           <p class="hero-description">{{ program.overview }}</p>
           <div class="hero-actions">
             <a href="#program-details" class="primary-action">Explore the program</a>
-            <a href="#program-faculty" class="secondary-action">Meet the faculty</a>
           </div>
         </div>
       </div>
@@ -63,32 +62,9 @@ defineProps({
       </section>
     </section>
 
-    <section id="program-faculty" class="faculty-section">
-      <div class="faculty-inner">
-        <header class="faculty-heading">
-          <div>
-            <p class="section-kicker">The people who teach it</p>
-            <h2>{{ program.code }} faculty</h2>
-          </div>
-          <p>Meet the faculty members associated with this program.</p>
-        </header>
-
-        <div class="faculty-grid">
-          <article v-for="person in program.faculty" :key="person.name" class="faculty-person">
-            <img :src="person.image" :alt="person.name" />
-            <div class="faculty-person-details">
-              <h3>{{ person.name }}</h3>
-              <p>{{ person.title }}</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <footer class="program-footer">
       <p>Compare your options</p>
       <RouterLink to="/programs">Explore all CCS programs</RouterLink>
     </footer>
   </article>
 </template>
-

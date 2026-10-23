@@ -1,17 +1,11 @@
 <script setup>
 import ProgramDetail from './ProgramDetail.vue'
-import coordinatorPhoto from '../../assets/faculty/head_blis.jpg'
-
-const faculty = [
-  { name: 'Ana Mae B. Cantel', title: 'Program Coordinator (BLIS and MLIS)', image: coordinatorPhoto },
-]
 
 const program = {
   code: 'BLIS',
   name: 'Library and Information Science',
   accentColor: '#62bce1',
   overview: 'Connect people with knowledge by organizing information and making it accessible in many forms.',
-  faculty,
   objectives: [
     'Organize, preserve, and provide access to information resources for diverse communities.',
     'Support research, learning, and information literacy through user-centered services.',

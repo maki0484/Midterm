@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Faculty from '../views/Faculty.vue'
 import Announcements from '../views/Announcements.vue'
 import Contact from '../views/Contact.vue'
 import ProgramBSIT from '../views/programs/Program_BSIT.vue'
@@ -15,7 +14,6 @@ const router = createRouter({
     if (to.hash) return { el: to.hash, behavior: 'smooth' }
     const sectionByPath = {
       '/programs': '#programs',
-      '/faculty': '#faculty',
       '/about': '#about',
     }
     if (sectionByPath[to.path]) {
@@ -31,7 +29,7 @@ const router = createRouter({
       path: '/programs',name: 'programs',component: Home,
     },
     {
-      path: '/faculty',name: 'faculty',component: Faculty,
+      path: '/faculty', redirect: '/',
     },
     {
       path: '/about',name: 'about',component: Home,

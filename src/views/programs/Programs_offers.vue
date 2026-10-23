@@ -6,7 +6,6 @@ const programs = [
     description:
       'Design, develop, and manage technology solutions that help organizations and communities meet real-world needs.',
     accent: 'it',
-    faculty: 'it',
     route: '/programs/bsit',
   },
   {
@@ -15,7 +14,6 @@ const programs = [
     description:
       'Explore computing foundations, algorithms, and software development to solve complex problems with code.',
     accent: 'cs',
-    faculty: 'cs',
     route: '/programs/bscs',
   },
   {
@@ -24,7 +22,6 @@ const programs = [
     description:
       'Combine art, design, and technology through digital storytelling, animation, video editing, 3D modeling, and interactive experiences.',
     accent: 'dmia',
-    faculty: 'dmia',
     route: '/programs/bsdmia',
   },
   {
@@ -33,7 +30,6 @@ const programs = [
     description:
       'Connect people with knowledge by organizing, managing, and making information accessible in many forms.',
     accent: 'lis',
-    faculty: 'lis',
     route: '/programs/blis',
   },
 ]
@@ -73,13 +69,8 @@ const programs = [
             <span>Program details</span>
             <span class="link-arrow" aria-hidden="true">↗</span>
           </RouterLink>
-          <RouterLink :to="{ path: '/faculty', hash: `#faculty-${program.faculty}` }" class="faculty-link">
-            <span>Meet the faculty</span>
-            <span class="link-arrow" aria-hidden="true">↗</span>
-          </RouterLink>
         </div>
       </article>
     </div>
   </section>
 </template>
-

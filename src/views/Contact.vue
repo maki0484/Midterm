@@ -29,7 +29,7 @@ function submitContactForm() {
       <section class="contact-location" aria-labelledby="location-heading">
         <div class="location-copy">
           <p class="contact-kicker">Visit us</p>
-          <h2 id="location-heading">Central Philippine University</h2>
+          <h2 id="location-heading">CPU</h2>
           <address>
             College of Computer Studies<br />
             Central Philippine University<br />
