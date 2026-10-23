@@ -2,10 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Faculty from '../views/Faculty.vue'
 import Announcements from '../views/Announcements.vue'
-import ProgramBSIT from '../views/Program_BSIT.vue'
-import ProgramBSCS from '../views/Program_BSCS.vue'
-import ProgramBSDMIA from '../views/Program_BSDMIA.vue'
-import ProgramBLIS from '../views/Program_BLIS.vue'
+import Contact from '../views/Contact.vue'
+import ProgramBSIT from '../views/programs/Program_BSIT.vue'
+import ProgramBSCS from '../views/programs/Program_BSCS.vue'
+import ProgramBSDMIA from '../views/programs/Program_BSDMIA.vue'
+import ProgramBLIS from '../views/programs/Program_BLIS.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +38,9 @@ const router = createRouter({
     },
     {
       path: '/announcements',name: 'announcements',component: Announcements,
+    },
+    {
+      path: '/contact',name: 'contact',component: Contact,
     },
     {
       path: '/programs/bsit',name: 'program-bsit',component: ProgramBSIT,

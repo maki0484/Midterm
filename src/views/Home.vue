@@ -1,8 +1,9 @@
 <script setup>
 import Hero from './Hero.vue'
-import ProgramsOffers from './Programs_offers.vue'
+import ProgramsOffers from './programs/Programs_offers.vue'
 import About from './About.vue'
 import Announcements from './Announcements.vue'
+import Contact from './Contact.vue'
 </script>
 
 <template>
@@ -11,13 +12,7 @@ import Announcements from './Announcements.vue'
     <ProgramsOffers />
     <About />
     <Announcements />
+    <Contact />
   </div>
 </template>
 
-<style scoped>
-.home-page {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-</style>

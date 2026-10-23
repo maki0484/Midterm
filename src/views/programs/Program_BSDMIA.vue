@@ -1,6 +1,6 @@
 <script setup>
-import ProgramDetail from '../components/ProgramDetail.vue'
-import coordinatorPhoto from '../assets/faculty/head_dmia.jpg'
+import ProgramDetail from './ProgramDetail.vue'
+import coordinatorPhoto from '../../assets/faculty/head_dmia.jpg'
 
 const faculty = [
   { name: 'Marjee Rose B. Parreño', title: 'Program coordinator (BSCS, BSDMIA, and MSCS)', image: coordinatorPhoto },

@@ -1,12 +1,12 @@
 <script setup>
-import ProgramDetail from '../components/ProgramDetail.vue'
-import coordinatorPhoto from '../assets/faculty/head_it.jpg'
-import beldiaPhoto from '../assets/faculty/beldia.jpg'
-import antonioPhoto from '../assets/faculty/antonio.jpg'
-import lesleyPhoto from '../assets/faculty/lesley.jpg'
-import doniePhoto from '../assets/faculty/donie.jpg'
-import rosePhoto from '../assets/faculty/rose.jpg'
-import rodPhoto from '../assets/faculty/rod.jpg'
+import ProgramDetail from './ProgramDetail.vue'
+import coordinatorPhoto from '../../assets/faculty/head_it.jpg'
+import beldiaPhoto from '../../assets/faculty/beldia.jpg'
+import antonioPhoto from '../../assets/faculty/antonio.jpg'
+import lesleyPhoto from '../../assets/faculty/lesley.jpg'
+import doniePhoto from '../../assets/faculty/donie.jpg'
+import rosePhoto from '../../assets/faculty/rose.jpg'
+import rodPhoto from '../../assets/faculty/rod.jpg'
 
 const faculty = [
   { name: 'Rea P. Balontong', title: 'Department Head (IT & IS)', image: coordinatorPhoto },

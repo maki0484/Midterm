@@ -1,6 +1,6 @@
 <script setup>
-import ProgramDetail from '../components/ProgramDetail.vue'
-import coordinatorPhoto from '../assets/faculty/head_blis.jpg'
+import ProgramDetail from './ProgramDetail.vue'
+import coordinatorPhoto from '../../assets/faculty/head_blis.jpg'
 
 const faculty = [
   { name: 'Ana Mae B. Cantel', title: 'Program Coordinator (BLIS and MLIS)', image: coordinatorPhoto },
