@@ -47,6 +47,33 @@ const facultyStaff = [
   { name: 'Chriselda Elaine Ador', title: 'Guidance Counselor', image: adorPhoto },
   { name: 'Donna May Rivera', title: 'Library Liaison Officer', image: donnaPhoto },
 ]
+
+const departments = [
+  {
+    id: 'faculty-it',
+    name: 'Information Technology',
+    coordinator: coordinators[0],
+    teachers: teachers.filter((person) => person.title.includes('BSIT')),
+  },
+  {
+    id: 'faculty-cs',
+    name: 'Computer Science',
+    coordinator: coordinators[1],
+    teachers: teachers.filter((person) => person.title.includes('BSCS')),
+  },
+  {
+    id: 'faculty-dmia',
+    name: 'Digital Media and Interactive Arts',
+    coordinator: coordinators[1],
+    teachers: [],
+  },
+  {
+    id: 'faculty-lis',
+    name: 'Library and Information Science',
+    coordinator: coordinators[2],
+    teachers: [],
+  },
+]
 </script>
 
 <template>
@@ -81,10 +108,22 @@ const facultyStaff = [
       </div>
     </div>
 
-    <div class="people-section">
-      <h3 class="group-title">Teachers</h3>
+    <div
+      v-for="department in departments"
+      :id="department.id"
+      :key="department.id"
+      class="people-section department-section"
+    >
+      <h3 class="group-title">{{ department.name }}</h3>
       <div class="people-grid">
-        <article v-for="(person, index) in teachers" :key="index" class="person-card">
+        <article class="person-card">
+          <img :src="department.coordinator.image" :alt="department.coordinator.name" />
+          <div class="person-details">
+            <h4>{{ department.coordinator.name }}</h4>
+            <p>{{ department.coordinator.title }}</p>
+          </div>
+        </article>
+        <article v-for="person in department.teachers" :key="person.name" class="person-card">
           <img :src="person.image" :alt="person.name" />
           <div class="person-details">
             <h4>{{ person.name }}</h4>
@@ -142,6 +181,30 @@ h2 {
   margin-top: 2.5rem;
 }
 
+.department-section {
+  scroll-margin-top: 1.5rem;
+}
+
+#faculty-it {
+  --faculty-card-width: 240px;
+  --faculty-image-ratio: 4 / 5;
+}
+
+#faculty-cs {
+  --faculty-card-width: 240px;
+  --faculty-image-ratio: 4 / 5;
+}
+
+#faculty-dmia {
+  --faculty-card-width: 240px;
+  --faculty-image-ratio: 4 / 5;
+}
+
+#faculty-lis {
+  --faculty-card-width: 240px;
+  --faculty-image-ratio: 4 / 5;
+}
+
 .group-title {
   margin: 0 0 1rem;
   color: var(--secondary-purple);
@@ -150,8 +213,12 @@ h2 {
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 240px));
   gap: 1.25rem;
+}
+
+.department-section .people-grid {
+  grid-template-columns: repeat(auto-fit, var(--faculty-card-width));
 }
 
 .person-card {
@@ -166,8 +233,11 @@ h2 {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
   object-position: center 25%;
+}
+
+.department-section .person-card img {
+  aspect-ratio: var(--faculty-image-ratio);
 }
 
 .person-details {
@@ -202,17 +272,4 @@ h2 {
   padding: 1.5rem;
 }
 
-@media (max-width: 600px) {
-  .content-section {
-    padding: 1.5rem;
-  }
-
-  .dean-card {
-    grid-template-columns: 1fr;
-  }
-
-  .dean-card img {
-    max-height: 300px;
-  }
-}
 </style>

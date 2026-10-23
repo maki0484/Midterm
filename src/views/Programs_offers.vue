@@ -6,6 +6,8 @@ const programs = [
     description:
       'Design, develop, and manage technology solutions that help organizations and communities meet real-world needs.',
     accent: 'it',
+    faculty: 'it',
+    route: '/programs/bsit',
   },
   {
     code: 'BSCS',
@@ -13,6 +15,8 @@ const programs = [
     description:
       'Explore computing foundations, algorithms, and software development to solve complex problems with code.',
     accent: 'cs',
+    faculty: 'cs',
+    route: '/programs/bscs',
   },
   {
     code: 'BSDMIA',
@@ -20,6 +24,8 @@ const programs = [
     description:
       'Combine art, design, and technology through digital storytelling, animation, video editing, 3D modeling, and interactive experiences.',
     accent: 'dmia',
+    faculty: 'dmia',
+    route: '/programs/bsdmia',
   },
   {
     code: 'BLIS',
@@ -27,6 +33,8 @@ const programs = [
     description:
       'Connect people with knowledge by organizing, managing, and making information accessible in many forms.',
     accent: 'lis',
+    faculty: 'lis',
+    route: '/programs/blis',
   },
 ]
 </script>
@@ -60,10 +68,16 @@ const programs = [
           <h3>{{ program.name }}</h3>
           <p class="program-description">{{ program.description }}</p>
         </div>
-        <RouterLink to="/faculty" class="faculty-link">
-          <span>Meet the faculty</span>
-          <span class="link-arrow" aria-hidden="true">↗</span>
-        </RouterLink>
+        <div class="card-actions">
+          <RouterLink :to="program.route" class="program-link">
+            <span>Program details</span>
+            <span class="link-arrow" aria-hidden="true">↗</span>
+          </RouterLink>
+          <RouterLink :to="{ path: '/faculty', hash: `#faculty-${program.faculty}` }" class="faculty-link">
+            <span>Meet the faculty</span>
+            <span class="link-arrow" aria-hidden="true">↗</span>
+          </RouterLink>
+        </div>
       </article>
     </div>
   </section>
@@ -71,8 +85,8 @@ const programs = [
 
 <style scoped>
 .programs-section {
-  --section-bg: #07111f;
-  --card-bg: #101f32;
+  --section-bg: #61B367;
+  --card-bg: #132C2D;
   --card-border: #20364e;
   margin: -2rem -5rem;
   padding: 3.5rem 1rem 2rem;
@@ -151,7 +165,7 @@ h2 span {
 .program-card:hover {
   transform: translateY(-4px);
   border-color: #3d7890;
-  background: #13253a;
+  background: #249866;
 }
 
 .card-topline {
@@ -175,7 +189,7 @@ h2 span {
   place-items: center;
   border: 1px solid #29415d;
   border-radius: 1rem;
-  background: #0a1727;
+  background: rgb(255, 255, 255);
   color: var(--program-accent);
   font-size: 0.75rem;
   font-weight: 800;
@@ -225,29 +239,48 @@ h2 span {
   line-height: 1.75;
 }
 
+.card-actions {
+  display: grid;
+  gap: 0.55rem;
+  padding-top: 1rem;
+  border-top: 1px solid #29415a;
+}
+
+.program-link,
 .faculty-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-top: 1.1rem;
-  border-top: 1px solid #29415a;
-  color: #f3f7ff;
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
 }
 
+.program-link {
+  padding: 0.7rem 0.85rem;
+  border-radius: 4px;
+  background: var(--program-accent);
+  color: #07111f;
+}
+
+.faculty-link {
+  padding: 0.4rem 0.15rem;
+  color: #f3f7ff;
+}
+
 .link-arrow {
-  color: #52d5f2;
+  color: inherit;
   font-size: 1.2rem;
   transition: transform 180ms ease;
 }
 
+.program-link:hover .link-arrow,
 .faculty-link:hover .link-arrow {
   transform: translate(3px, -3px);
 }
 
+.program-link:focus-visible,
 .faculty-link:focus-visible {
   outline: 2px solid #52d5f2;
   outline-offset: 5px;

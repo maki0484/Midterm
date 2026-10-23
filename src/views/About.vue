@@ -1,10 +1,11 @@
 <template>
-  <section id="partnerships" class="content-section">
-    <p class="eyebrow">Working together</p>
-    <h2>Partnerships &amp; Memberships</h2>
+  <section id="about" class="content-section">
+    <p class="eyebrow">About the college</p>
+    <h2>College of Computer Studies</h2>
     <p>
-      Collaboration with the wider academic and technology communities helps create
-      opportunities for learning, professional growth, and shared innovation.
+      The College of Computer Studies at Central Philippine University values collaboration with
+      the wider technology community. Partnerships and memberships help connect students and
+      faculty with opportunities for learning, growth, and professional engagement.
     </p>
   </section>
 </template>

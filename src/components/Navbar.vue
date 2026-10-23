@@ -11,8 +11,8 @@
     <nav class="navigation-links">
       <RouterLink to="/" class="nav-link">Home</RouterLink>
       <RouterLink to="/programs" class="nav-link">Programs</RouterLink>
-      <RouterLink to="/faculty" class="nav-link">Faculty & Staff</RouterLink>
-      <RouterLink to="/partnerships" class="nav-link">Partnerships & Memberships</RouterLink>
+      <RouterLink to="/#announcements" class="nav-link">Announcements</RouterLink>
+      <RouterLink to="/about" class="nav-link">About The College</RouterLink>
     </nav>
 
     <div class="action-block">
