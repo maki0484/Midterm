@@ -9,7 +9,7 @@
     </div>
 
     <nav class="navigation-links">
-      <RouterLink to="/#home" class="nav-link">Home</RouterLink>
+      <RouterLink to="/home1" class="nav-link">Home</RouterLink>
       <RouterLink to="/#programs" class="nav-link">Programs</RouterLink>
       <RouterLink to="/#faculty" class="nav-link">Faculty & Staff</RouterLink>
       <RouterLink to="/#partnerships" class="nav-link">Partnerships & Memberships</RouterLink>

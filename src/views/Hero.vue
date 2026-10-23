@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="hero-section">
+  <section id="home1" class="hero-section">
     <p class="eyebrow">Central Philippine University</p>
     <h1>Welcome to the College of Computer Studies</h1>
     <p class="hero-description">
