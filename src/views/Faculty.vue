@@ -30,20 +30,21 @@ const coordinators = [
 ]
 
 const teachers = [
-  { name: 'Add name', title: 'Teacher', image: pedroPhoto },
-  { name: 'Add name', title: 'Teacher', image: beldiaPhoto },
-  { name: 'Add name', title: 'Teacher', image: antonioPhoto },
-  { name: 'Add name', title: 'Teacher', image: doniePhoto },
-  { name: 'Add name', title: 'Teacher', image: rosePhoto },
-  { name: 'Add name', title: 'Teacher', image: sapulPhoto },
-  { name: 'Add name', title: 'Teacher', image: ampPhoto },
+  { name: 'Pedro Peter Rhys B. Cambronero', title: 'Teacher', image: pedroPhoto },
+  { name: 'Leo Paulo B. Beldia', title: 'Teacher', image: beldiaPhoto },
+  { name: 'Antonio B. Dela CruzAntonio M. Montaño, Jr.', title: 'Teacher', image: antonioPhoto },
+  { name: 'Lesley Joy L. Dignadice', title: 'Teacher', image: lesleyPhoto },
+  { name: 'Donie S. Jardeleza', title: 'Teacher', image: doniePhoto },
+  { name: 'Rose Leah Joy A. Ojacastro', title: 'Teacher', image: rosePhoto },
+  { name: 'Ma. Sheila C. Sapul', title: 'Teacher', image: sapulPhoto },
+  { name: 'Rodolfo C. Eregia, Jr.', title: 'Teacher', image: rodPhoto },
 ]
 
 const facultyStaff = [
-  { name: 'Add name', title: 'Faculty Staff', image: chrislynPhoto },
-  { name: 'Add name', title: 'Faculty Staff', image: rodPhoto },
-  { name: 'Add name', title: 'Faculty Staff', image: lesleyPhoto },
-  { name: 'Add name', title: 'Faculty Staff', image: donnaPhoto },
+  { name: 'Chrislyn C. Castaño', title: 'Faculty Staff', image: chrislynPhoto },
+  { name: 'A.M.P. Latter P. Taasan', title: 'Faculty Staff', image: ampPhoto },
+  { name: 'Chriselda Elaine Ador', title: 'Faculty Staff', image: adorPhoto },
+  { name: 'Donna May Rivera', title: 'Faculty Staff', image: donnaPhoto },
 ]
 </script>
 

@@ -17,24 +17,16 @@ const router = createRouter({
   },
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home,
+      path: '/',name: 'home',component: Home,
     },
     {
-      path: '/programs',
-      name: 'programs',
-      component: Home,
+      path: '/programs',name: 'programs',component: Home,
     },
     {
-      path: '/faculty',
-      name: 'faculty',
-      component: Home,
+      path: '/faculty',name: 'faculty',component: Home,
     },
     {
-      path: '/partnerships',
-      name: 'partnerships',
-      component: Home,
+      path: '/partnerships',name: 'partnerships',component: Home,
     },
   ]
 })
