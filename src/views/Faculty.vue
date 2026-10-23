@@ -11,11 +11,11 @@ import doniePhoto from '../assets/faculty/donie.jpg'
 import rosePhoto from '../assets/faculty/rose.jpg'
 import sapulPhoto from '../assets/faculty/sapul.jpg'
 import ampPhoto from '../assets/faculty/amp.jpg'
-import adorPhoto from '../assets/faculty/ador.jpg'
 import chrislynPhoto from '../assets/faculty/chrislyn.jpg'
 import rodPhoto from '../assets/faculty/rod.jpg'
 import lesleyPhoto from '../assets/faculty/lesley.jpg'
 import donnaPhoto from '../assets/faculty/donna.png'
+import adorPhoto from '../assets/faculty/ador.jpg'
 
 const dean = {
   name: 'Ma. Christina A. Quijano, MSCS',
@@ -31,21 +31,21 @@ const coordinators = [
 ]
 
 const teachers = [
-  { name: 'Pedro Peter Rhys B. Cambronero', title: 'Teacher', image: pedroPhoto },
-  { name: 'Leo Paulo B. Beldia', title: 'Teacher', image: beldiaPhoto },
-  { name: 'Antonio B. Dela CruzAntonio M. Montaño, Jr.', title: 'Teacher', image: antonioPhoto },
-  { name: 'Lesley Joy L. Dignadice', title: 'Teacher', image: lesleyPhoto },
-  { name: 'Donie S. Jardeleza', title: 'Teacher', image: doniePhoto },
-  { name: 'Rose Leah Joy A. Ojacastro', title: 'Teacher', image: rosePhoto },
-  { name: 'Ma. Sheila C. Sapul', title: 'Teacher', image: sapulPhoto },
-  { name: 'Rodolfo C. Eregia, Jr.', title: 'Teacher', image: rodPhoto },
+  { name: 'Pedro Peter Rhys B. Cambronero', title: 'BSCS Program', image: pedroPhoto },
+  { name: 'Leo Paulo B. Beldia', title: 'BSIT and BSIS Program', image: beldiaPhoto },
+  { name: 'Antonio M. Montaño, Jr.', title: 'BSIT and BSIS Program', image: antonioPhoto },
+  { name: 'Lesley Joy L. Dignadice', title: 'BSIT and BSIS Program', image: lesleyPhoto },
+  { name: 'Donie S. Jardeleza', title: 'BSIT and BSIS Program', image: doniePhoto },
+  { name: 'Rose Leah Joy A. Ojacastro', title: 'BSIT and BSIS Program', image: rosePhoto },
+  { name: 'Ma. Sheila C. Sapul', title: 'BSCS Program', image: sapulPhoto },
+  { name: 'Rodolfo C. Eregia, Jr.', title: 'BSIT and BSIS Program', image: rodPhoto },
 ]
 
 const facultyStaff = [
-  { name: 'Chrislyn C. Castaño', title: 'Faculty Staff', image: chrislynPhoto },
-  { name: 'A.M.P. Latter P. Taasan', title: 'Faculty Staff', image: ampPhoto },
-  { name: 'Chriselda Elaine Ador', title: 'Faculty Staff', image: adorPhoto },
-  { name: 'Donna May Rivera', title: 'Faculty Staff', image: donnaPhoto },
+  { name: 'Chrislyn C. Castaño', title: 'Secretary', image: chrislynPhoto },
+  { name: 'A.M.P. Latter P. Taasan', title: 'Computer Laboratory Technician', image: ampPhoto },
+  { name: 'Chriselda Elaine Ador', title: 'Guidance Counselor', image: adorPhoto },
+  { name: 'Donna May Rivera', title: 'Library Liaison Officer', image: donnaPhoto },
 ]
 </script>
 
