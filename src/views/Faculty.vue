@@ -23,10 +23,10 @@ const dean = {
 }
 
 const coordinators = [
-  { name: 'Add name', title: 'Head Coordinator - IT', image: itCoordinatorPhoto },
-  { name: 'Add name', title: 'Head Coordinator - DMIA', image: dmiaCoordinatorPhoto },
-  { name: 'Add name', title: 'Head Coordinator - BLIS', image: blisCoordinatorPhoto },
-  { name: 'Add name', title: 'Head Coordinator - CL', image: clCoordinatorPhoto },
+  { name: 'Rea P. Balontong', title: 'Department Head (IT & IS)', image: itCoordinatorPhoto },
+  { name: 'Marjee Rose B. Parreño', title: 'Program coordinator (BSCS, BSDMIA, and MSCS)', image: dmiaCoordinatorPhoto },
+  { name: 'Ana Mae B. Cantel', title: 'Program Coordinator (BLIS and MLIS)', image: blisCoordinatorPhoto },
+  { name: 'Lennon D. Pajar', title: 'Computer Laboratory Coordinator', image: clCoordinatorPhoto },
 ]
 
 const teachers = [

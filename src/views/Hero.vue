@@ -5,7 +5,7 @@
     <p class="hero-description">
       Learn, create, and prepare for a future shaped by computing and technology.
     </p>
-    <RouterLink to="/#programs" class="hero-link">Explore our programs</RouterLink>
+    <RouterLink to="/programs" class="hero-link">Explore our programs</RouterLink>
   </section>
 </template>
 

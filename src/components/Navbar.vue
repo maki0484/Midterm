@@ -9,14 +9,14 @@
     </div>
 
     <nav class="navigation-links">
-      <RouterLink to="/home1" class="nav-link">Home</RouterLink>
-      <RouterLink to="/#programs" class="nav-link">Programs</RouterLink>
-      <RouterLink to="/#faculty" class="nav-link">Faculty & Staff</RouterLink>
-      <RouterLink to="/#partnerships" class="nav-link">Partnerships & Memberships</RouterLink>
+      <RouterLink to="/" class="nav-link">Home</RouterLink>
+      <RouterLink to="/programs" class="nav-link">Programs</RouterLink>
+      <RouterLink to="/faculty" class="nav-link">Faculty & Staff</RouterLink>
+      <RouterLink to="/partnerships" class="nav-link">Partnerships & Memberships</RouterLink>
     </nav>
 
     <div class="action-block">
-      <RouterLink to="/#programs" class="portal-cta">Explore Programs</RouterLink>
+      <RouterLink to="/programs" class="portal-cta">Explore Programs</RouterLink>
     </div>
   </header>
 </template>
